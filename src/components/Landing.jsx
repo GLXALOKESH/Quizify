@@ -1,16 +1,10 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const Landing = () => {
   return (
     <>
-     <div className="nav w-[100%] h-[60px] bg-black text-white px-[20px]  flex items-center text-[25px] font-bold  justify-between">
-        Quizify
-      <div className="buttons flex items-center h-full gap-[8px]">
-      <button className=' p-[3px] rounded-[7px] text-white hover:bg-cyan-500 hover:text-black hover:border-cyan-500 font-bold  select-none text-[50%] py-[4px] bg-black border-[1px] border-white'>Login</button>
-      <button className=' p-[3px] rounded-[7px] text-white hover:bg-cyan-500 hover:text-black hover:border-cyan-500 font-bold  select-none text-[50%] py-[4px] bg-black border-[1px] border-white'>Register</button>
-
-      </div>
-      </div> 
+      <Navbar/>
       <div className="maincont h-[calc(100vh-60px)] w-[100vw] flex justify-center items-center">
      <div className="container  w-[50%] flex flex-col items-center gap-[10px]">
         <p className='text-[200%] text-center font-bold capitalize'>Welcome to Quizify A React Quiz Platform for everybody</p>

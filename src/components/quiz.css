@@ -1,0 +1,9 @@
+
+.transition-options {
+    left: 0; /* Add a default value for left */
+    transition: left .3s ease-in-out;
+  }
+  
+  .transition-options:hover {
+    left: 10%;
+  }
