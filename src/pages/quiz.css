@@ -6,4 +6,19 @@
   
   .transition-options:hover {
     left: 10%;
+    
+  }
+  
+  .transition-options:focus{
+    left: 10%;
+    
+  }
+
+  .shadow-1{
+    box-shadow: 2px 2px 0px 1px black;
+  }
+
+  .shadow-1:active{
+    box-shadow: -2px -2px 0px 1px black;
+
   }

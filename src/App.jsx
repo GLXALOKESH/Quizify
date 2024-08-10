@@ -6,7 +6,7 @@ import Landing from './pages/Landing'
 import  Quiz from './pages/Quiz'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Homepage from './pages/Homepage'
-
+import ScoreList from "./pages/ScoreList"
   const router = createBrowserRouter([
     {
       path:"/",
@@ -23,6 +23,10 @@ import Homepage from './pages/Homepage'
     {
       path:"/register",
       element:<Register />
+    },
+    {
+      path:"/scorelist",
+      element:<ScoreList />
     }
   ])
 
@@ -30,6 +34,7 @@ function App() {
 
   return (
     <>
+    
     <RouterProvider  router={router}/>
     </>
   )
