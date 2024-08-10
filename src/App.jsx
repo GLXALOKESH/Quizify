@@ -1,15 +1,36 @@
 import { useState } from 'react'
 import './App.css'
-import Register from './components/Register'
-import Login from './components/Login'
-import Landing from './components/Landing'
-import  Quiz from './components/Quiz'
-import Homepage from './components/Homepage'
+import Register from './pages/Register'
+import Login from './pages/Login'
+import Landing from './pages/Landing'
+import  Quiz from './pages/Quiz'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Homepage from './pages/Homepage'
+
+  const router = createBrowserRouter([
+    {
+      path:"/",
+      element: <Landing />
+    },
+    {
+      path: "/quiz",
+      element: <Quiz />
+    },
+    {
+      path:"/login",
+      element:<Login />
+    },
+    {
+      path:"/register",
+      element:<Register />
+    }
+  ])
+
 function App() {
 
   return (
     <>
-    <Quiz />
+    <RouterProvider  router={router}/>
     </>
   )
 }

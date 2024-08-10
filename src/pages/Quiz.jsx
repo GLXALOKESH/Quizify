@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Navbar from "../components/Navbar.jsx"
 import { useState } from 'react'
 import './quiz.css'
 const Quiz = () => {

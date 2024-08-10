@@ -1,10 +1,14 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 const Register = () => {
   return (
-    <div className=' w-[100vw] h-[100vh] bg-[#9f8cca] flex justify-center items-center'>
+    <>
+    <Navbar exit />
+
+    <div className=' w-[100vw] h-[calc(100vh-60px)] bg-[#9f8cca] flex justify-center items-center'>
 	
-        <div className="conatiner h-[60%] w-[40%] bg-[#3e394c] rounded-b-[10px]">
+        <div className="conatiner h-[70%] w-[40%] bg-[#3e394c] rounded-b-[10px]">
             <div className="header w-[100%] h-[50px] border-b-2 border-[#9f8cca] flex justify-center items-center text-[23px] uppercase  font-bold text-[#7e6df3]"> Register</div>
             <div className="form w-full h-[calc(100%-50px)] p-[40px]">
                 <form action="/" method="post">
@@ -20,6 +24,7 @@ const Register = () => {
                    <p className='w-[30%] text-[95%]'> Re-password:  </p>
                     <input type="password" name="username" id="username" className='text-white w-[70%] px-[5px] outline-none bg-[#332f3f] '/>
                 </label>
+                <NavLink to="/login"><div className="tosignup text-[12px]  text-white mt-[15px]">Already have an account ?</div></NavLink>
                 <div className='flex  justify-center m-[40px]'>
                 <button type="submit" className='bg-white p-[3px] rounded-[5px] font-bold uppercase text-[13px]  '>submit</button>
                 </div>
@@ -28,6 +33,7 @@ const Register = () => {
         </div>
        
     </div>
+    </>
   )
 }
 
