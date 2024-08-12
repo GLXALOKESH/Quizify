@@ -1,7 +1,6 @@
 import express from "express"
 import cookieParser from "cookie-parser"
 import cors from "cors"
-
 const app = express()
 app.use(cors({
     origin:process.env.CORS_ORIGIN,
@@ -11,8 +10,13 @@ app.use(express.json({limit:'16kb'}))
 app.use(cookieParser())
 app.use(express.static('public'))
 
-app.get("/", (req,res)=>{
-    res.send("Hello World")
-})
+//route import
+import userRouter from "../src/routes/user.routes.js"
+
+
+
+
+//route declaration
+app.use("/api/v1/users",userRouter)
 
 export {app}
