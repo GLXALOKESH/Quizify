@@ -27,6 +27,10 @@ import ScoreList from "./pages/ScoreList"
     {
       path:"/scorelist",
       element:<ScoreList />
+    },
+    {
+      path:"/homepage",
+      element:<Homepage />
     }
   ])
 
