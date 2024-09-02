@@ -2,7 +2,7 @@ import {asyncHandler} from "../utils/asycnHandler.js"
 import {User} from "../models/user.models.js"
 import {ApiError} from "../utils/ApiError.js"
 import {ApiResponce} from "../utils/ApiResponce.js"
-
+ 
 const generateAccessAndRefreshToken = async (id)=>{
      try {
         const user = await User.findById(id)
